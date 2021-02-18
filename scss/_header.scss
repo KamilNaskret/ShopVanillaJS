@@ -1,0 +1,26 @@
+.header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:royalblue;
+    height:100px;
+    &__title{
+        font-size:$fontSize*2.5;
+        color:white;
+    }
+    &__shop{
+        z-index:2;
+        margin-top:10px;
+        border:2px solid black;
+        cursor:pointer;
+        transition:.3s;
+        &:hover{
+            background-color:map-get($colors,buttonColor);
+            color:white;
+        }
+        ion-icon{
+            height:30px;
+            width:70px;
+        }
+    }
+}
