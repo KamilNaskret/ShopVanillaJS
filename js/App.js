@@ -35,9 +35,14 @@ class Shop{
         });
     }
     addToShop(event){
-        console.log(event.target.parent);
+        const {id,title,price,author,img} = this.products[this.buttons.indexOf(event.target)];
         const div = document.createElement('div');
         div.classList.add('shop__item');
+        div.innerHTML = `
+            <img class="product__img alt="product-image" src=${img}>
+            <h2 class="product__title">${title}</h2>
+            <p class="product__author">${author}</p>
+        `;
         console.log(this)
         this.shopList.appendChild(div);
     }

@@ -7,6 +7,26 @@
     display:none;
     background-color: red;
     z-index:1;
+    padding-top:150px;
+    text-align:center;
+    &__button{
+        z-index: 2;
+        margin-top: 10px;
+        border: 2px solid black;
+        cursor: pointer;
+        padding:10px 20px;
+    }
+    &__item{
+        margin:15px auto;
+        width:90%;
+        height:150px;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        .product__img{
+            height:100%;
+        }
+    }
 }
 .active{
     display:block;
